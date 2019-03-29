@@ -5,30 +5,33 @@ html *{
 	font-family: 'Abel', sans-serif;
 	color:black;
 }
-a{
-	text-decoration: none !important;
+a {
+	text-decoration: none !important ;
 }
-header{
-	/*margin:15px 55px 70px;*/
-	background-color: rgba(255, 255, 255, 0.8);
+header {
+	background-color: rgba(255, 255, 255, 0.9);
 }
-
-.nav>li>a:focus {
-	background-color: #00C8FF;
-    border-radius: 5px;	
-    text-decoration: none;
-}
+@media (focus: focus)   {
+  .nav>li>a:focus  {
+    background-color: #00C8FF;
+    border-radius: 5px; 
+  }
+}  
 
 @media (hover: hover) {
 	.nav>li>a:hover {
     	background-color: #00C8FF;
     	border-radius: 5px;	
     	text-decoration: none;
+      color: white;
+
+
 	}
 }
-
-.nav a:active{
-	color: white !important;
+@media (active: active) {
+  .nav a:active {
+      color: white !important;
+  }
 }
 
 .nav a{
@@ -36,15 +39,20 @@ header{
 	font-size: 16px;
 
 }
-.btn-custom{
-	background-color: #00C8FF;
+.btn-custom {
+	background-color: #00CfFF;
 	border-radius: 10px !important;
 	color: white;
 }
-.btn-custom:hover{
-	background-color: #ffffff;
-	border-radius: 10px !important;
-	color: #00C8FF;
+@media (hover: hover) {
+  .btn-custom:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    color: white !important ;
+
+  }
 }
 .img-service{
 	background-position: center;
@@ -74,7 +82,19 @@ header{
   white-space: nowrap;
   color: #C2C2C2;
   min-width: 100%;
+}
 
+@media (hover: hover) {
+  .line:hover {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    color: #575757;
+    min-width: 100%;
+
+  }
 }
 .line:before,
 .line:after {
@@ -97,6 +117,33 @@ header{
 }
 .page-footer{
 	background-color: #F7F7F7;
+}
+svg .clients-logo {
+  fill: #B2B2B2;
+}
+
+@media (hover: hover)   {
+  svg:hover .clients-logo {
+    fill: #000;
+  }
+}  
+
+@media (hover: hover)   {
+  .service-block:hover  {
+    border-radius: 10px;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+}  
+#logo-decos{
+  width: 100px;
+  height: 30px;
+}
+.logo svg{
+  width:202px;
+  height:42px;
 }
 
 
